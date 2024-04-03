@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/style1.css">
+    <title>Add New Movie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <a href="/">Back</a>
+    <h1>Add New Movie</h1>
+    <form action="/movies/new" method="POST">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+        
+        <label for="genre">Genre:</label><br>
+        <input type="text" id="genre" name="genre" required><br><br>
+        
+        <label for="year">Year:</label><br>
+        <input type="number" id="year" name="year" required><br><br>
+        
+        <label for="director">Director:</label><br>
+        <input type="text" id="director" name="director" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
